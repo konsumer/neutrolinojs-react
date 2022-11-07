@@ -7,7 +7,7 @@
   "scripts": {
     "start:frontend": "vite --clearScreen false",
     "build:frontend": "vite build",
-    "start:wrapper": "npx @neutralinojs/neu -- run --url=http://localhost:5173/",
+    "start:wrapper": "npm run build:frontend && npx @neutralinojs/neu -- run --url=http://localhost:5173/",
     "build:wrapper": "npx @neutralinojs/neu build -r",
     "start": "run-p start:frontend start:wrapper",
     "build": "run-s build:frontend build:wrapper"
