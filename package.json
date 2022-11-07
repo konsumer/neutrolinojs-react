@@ -1,0 +1,35 @@
+{
+  "name": "neutrolinojs-react",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A template project for neutrolinojs that uses vite and react",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "vite --clearScreen false",
+    "build:frontend": "vite build",
+    "start:wrapper": "npx @neutralinojs/neu -- run --url=http://localhost:5173/",
+    "build:wrapper": "npx @neutralinojs/neu build -r",
+    "start": "run-p start:frontend start:wrapper",
+    "build": "run-s build:frontend build:wrapper"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumer/neutrolinojs-react.git"
+  },
+  "keywords": [],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konsumer/neutrolinojs-react/issues"
+  },
+  "homepage": "https://github.com/konsumer/neutrolinojs-react#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
+    "npm-run-all": "^4.1.5",
+    "vite": "^3.2.2"
+  }
+}
